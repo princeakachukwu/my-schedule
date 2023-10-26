@@ -1,0 +1,46 @@
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+ul li::before {
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url(images/White.psd);
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+    background-color: rgb(248, 122, 4);
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: orangered;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background-color: rgb(250, 1, 1);
+    color: white;
+}
